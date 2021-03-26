@@ -1,0 +1,15 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Track the burgers u eat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fulcrum-ctrl",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1"
+  }
+}
