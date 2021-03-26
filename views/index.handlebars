@@ -1,0 +1,41 @@
+<article id='appBody'>
+    {{!-- Ezekiel 25:17 --}}
+    <h1 class= 'title '>Welcome to Krusty Krab</h1>
+    <div class='row justify-content-around'>
+        <div class='col-md-3 toeat'>
+            <h2>Available Burgers: </h2>
+                {{#each burgers}}
+                    <div class='input-group mb-3'>
+                    {{#unless devoured}}
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" value='{{id}}. {{burger_name}}' readonly>
+                    {{#unless devoured}}
+                    <button data-id="{{id}}" class="btn change-devoured btn-primary" type="button" id="button-addon2" data-newDevoured="{{devoured}}" data-bs-toggle="modal" data-bs-target="#eatingBurgerModal">CHOMP</button>
+                    {{/unless}}
+                    {{/unless}}
+                    </div>
+                {{/each}}
+        </div>
+        <div class='col-md-3 devoureds' id='devouredList'>
+            <h2>Burgers devoured</h2>
+                <div>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" value='{{id}}. {{burger_name}}' readonly>
+                    {{/if}}
+                    {{/each}}
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='justify-content-center centered'>
+            <form id='enterBurgerForm'>
+            <label for="burgerInput"></label>
+            <textarea type='text' id="burgerInput" value="" name="burger"></textarea><br/>
+            <button type="submit" name="addBtn" class="btn btn-primary">Add burger</button>
+            </form>
+            <br/><p id='formDetails'>Enter a burger and hit submit!</p>
+        </div>
+    </div>
+    </div>
+</article>

@@ -1,0 +1,45 @@
+html, body {
+    background-color: teal;
+}
+
+#appBody {
+    background-color: teal;
+}
+
+.title {
+    color:darksalmon;
+    text-align: center;
+    margin: 15px 0 40px 0;
+}
+
+#burgerInput {
+    margin:100px 0 0 0;
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+
+#enterBurgerForm {
+    text-align:center;
+}
+
+#formDetails {
+    text-align:center;
+    color: white;
+}
+
+h2 {
+    color: red;
+}
+
+.toeat {
+    border: solid;
+    background-color: rgb(235, 235, 161);
+    padding: 20px;
+}
+
+#devouredList {
+    border: solid;
+    background-color: rgb(235, 235, 161);
+    padding: 20px;
+}

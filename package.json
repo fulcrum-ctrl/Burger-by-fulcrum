@@ -4,12 +4,14 @@
   "description": "Track the burgers u eat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:": "node server.js"
   },
   "author": "fulcrum-ctrl",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.1"
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
   }
 }
